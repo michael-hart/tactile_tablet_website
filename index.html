@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="img/pulse_small.ico">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300' rel='stylesheet' type='text/css'>
 
 	<title>Orion - Home</title>
 
@@ -63,11 +64,11 @@
         	</ol>
         	<div class="carousel-inner">
         		<div class="item active">
-        			<img src="./index_files/lights2.jpg" alt="First slide">
+        			<img src="./index_files/reading_braille.jpg" alt="First slide">
         			<div class="container">
         				<div class="carousel-caption">
-        					<h1>Intelligent street light solutions.</h1>
-        					<p><a class="btn btn-lg btn-info" href="product.html" role="button">Learn more</a></p>
+        					<h1>Refreshable text at your fingertips.</h1>
+        					<p><a class="btn btn-lg btn-info" href="product.html" role="button">Our Product</a></p>
         				</div>
         			</div>
         		</div>
@@ -75,16 +76,16 @@
         			<img src="./index_files/Electronics1.jpg" alt="Third slide">
         			<div class="container">
         				<div class="carousel-caption">
-        					<h1>Advanced sensing and network technology.</h1>
+        					<h1>Simple. Reliable. Affordable.</h1>
         					<p><a class="btn btn-lg btn-info" href="technology.html" role="button">Technology</a></p>
         				</div>
         			</div>
         		</div>
         		<div class="item">
-        			<img src="./index_files/pollution.jpg" alt="Second slide">
+        			<img src="./index_files/book_stack.jpg" alt="Second slide">
         			<div class="container">
         				<div class="carousel-caption">
-        					<h1>Be smart and enlighten your city.</h1>
+        					<h1>Try it for yourself.</h1>
         					<p><a class="btn btn-lg btn-info" href="contact-us.html" role="button">Contact Us</a></p>
         				</div>
         			</div>
@@ -218,18 +219,32 @@
     </script>
 
     <script type="text/javascript">
-    	$(document).ready(function() {
-    		$("[rel=marketing3]").popover({
-      placement : 'bottom', //placement of the popover. also can use top, bottom, left or right
-      animation : 'true',
-      trigger : 'hover',
-      title : '<div class="h4" style="text-align:center;"> Green Product</div>', //this is the top title bar of the popover. add some basic css
-      html: 'true', //needed to show html of course
-      content : 'Our system represents a completely green solution to the problem imposed by street lighting, therefore it decreases carbon emissions, a known contributor to climate change.' //this is the content of the html box. add the image here or anything you want really.
-  });
-    	});
+        $(document).ready(function() {
+            $("[rel=marketing3]").popover({
+            placement : 'bottom', //placement of the popover. also can use top, bottom, left or right
+            animation : 'true',
+            trigger : 'hover',
+            title : '<div class="h4" style="text-align:center;"> Green Product</div>', //this is the top title bar of the popover. add some basic css
+            html: 'true', //needed to show html of course
+            content : 'Our system represents a completely green solution to the problem imposed by street lighting, therefore it decreases carbon emissions, a known contributor to climate change.' //this is the content of the html box. add the image here or anything you want really.
+            });
+        });
     </script>
 
-
+    <!-- Live navbar positioning -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var nav = $('.navbar-wrapper');
+            var navHomeY = parseInt(nav.css('margin-top').slice(0,2));
+            //console.log("navHomeY: " + navHomeY);
+            var $w = $(window);
+            // Add scroll event listener
+            $w.scroll(function() {
+                var scrollTop = $w.scrollTop();
+                //console.log("scrollTop: " + scrollTop);
+                nav.css('margin-top', Math.max(navHomeY - scrollTop, 0));
+            });
+        });
+    </script>
 
 </body></html>

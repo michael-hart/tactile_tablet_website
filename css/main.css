@@ -5,7 +5,8 @@ html, body {
   height: 100%; }
 
 body {
-  color: #5a5a5a; }
+  color: #5a5a5a;
+  font-family: 'Roboto' ; }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -273,7 +274,7 @@ footer {
 
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px; }
+    margin-top: 30px; }
 
   .navbar-wrapper .container {
     padding-right: 15px;
