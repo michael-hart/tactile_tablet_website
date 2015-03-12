@@ -70,7 +70,7 @@ body {
 /* Featurettes
 ------------------------- */
 .featurette-divider {
-  margin: 80px 0;
+  margin: 25px 0;
   /* Space out the Bootstrap <hr> more */ }
 
 /* Thin out the marketing headings */
@@ -78,6 +78,11 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px; }
+
+.featurette-text {
+  font-size: 18px;
+  color: #5a5a5a;
+}
 
 /* User Specific Files
 ------------------------- */
