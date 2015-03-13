@@ -39,6 +39,14 @@
       .btn {
         cursor: default;
       }
+      .img-tablet {
+        max-height: 350px;
+      }
+      .center-items {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
 
   </head>
@@ -136,26 +144,50 @@
 
     <div class="container marketing">
 
-    	<!-- Three columns of text below the carousel -->
+      <!-- Attempt to restructure -->
+      <div class="row">
+        <div class="col-md-4 center-items">
+          <div class="row">
+            <h2>£199.99</h2>
+            <p>Regular Retail Price of the Orion Tablet</p>
+            <p><a class="btn btn-default" role="button" rel="marketing1" data-original-title="" title="">View details »</a></p>
+          </div>
+          <div class="row">
+            <h2>£249.99</h2>
+            <p>Pre-order the next Orion tablet.</p>
+            <p><a class="btn btn-default" role="button" rel="marketing2" data-original-title="" title="">View details »</a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="http://www.yankodesign.com/images/design_news/2009/04/17/braille_book2.jpg" alt="Braille Tablet" class="img-responsive center-items img-tablet" />
+        </div>
+        <div class="col-md-4 center-items">
+          <h2>Coming Soon</h2>
+          <p>Keep up to date with the latest developments.</p>
+          <p><a class="btn btn-default" role="button" rel="marketing3" data-original-title="" title="">View details »</a></p>
+        </div>
+      </div>
+
+    	<!-- Three columns of text below the carousel
     	<div class="row">
     		<div class="col-lg-4">
     			<img src="./index_files/tablet.jpg" alt="Braille Tablet" class="img-responsive img-thumbnail" width="200" height="200">
     			<h2>£199.99</h2>
     			<p>Regular Retail Price of the Orion Tablet</p>
     			<p><a class="btn btn-default" role="button" rel="marketing1" data-original-title="" title="">View details »</a></p>
-    		</div><!-- /.col-lg-4 -->
+    		</div><!-- /.col-lg-4 
     		<div class="col-lg-4">
     			<img src="./index_files/book_stack.png" alt="Book Stack" class="img-thumbnail" width="200" height="200">
     			<h2>£249.99</h2>
     			<p>Pre-order the next Orion tablet.</p>
     			<p><a class="btn btn-default" role="button" rel="marketing2" data-original-title="" title="">View details »</a></p>
-    		</div><!-- /.col-lg-4 -->
+    		</div><!-- /.col-lg-4 
     		<div class="col-lg-4">
     			<img src="./index_files/coming_soon.jpg" class="img-thumbnail" alt="Circuit Board" width="300">
     			<h2>Coming Soon</h2>
     			<p>Keep up to date with the latest developments.</p>
     			<p><a class="btn btn-default" role="button" rel="marketing3" data-original-title="" title="">View details »</a></p>
-    		</div><!-- /.col-lg-4 -->
+    		</div><!-- /.col-lg-4 
     	</div><!-- /.row -->
 
     	<!-- START THE FEATURETTES -->
