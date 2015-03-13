@@ -5,8 +5,12 @@ html, body {
   height: 100%; }
 
 body {
-  color: #5a5a5a;
+  color: #001C42;
   font-family: 'Roboto' ; }
+
+.text-muted {
+  color: #8282B4;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
