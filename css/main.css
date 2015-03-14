@@ -12,6 +12,12 @@ body {
   color: #8282B4;
 }
 
+.center-items {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
